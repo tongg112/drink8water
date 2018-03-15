@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     getLeftWater(date,(leftWater) => {
         if(leftWater){
             // 展示剩余应喝的杯数
-            console.log(showWater);
+            console.log("showWater",showWater);
             showWater.innerHTML = leftWater;
         }else {
             // 初始化当天该喝水8杯
