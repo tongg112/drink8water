@@ -6,11 +6,13 @@
  -->
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Getting Started Extension's Popup</title>
     <style type="text/css">
       body {
         margin: 10px;
         white-space: nowrap;
+        background-color: #F5FFFA;
       }
 
       h1 {
@@ -22,6 +24,28 @@
         display: flex;
         justify-content: space-between;
       }
+
+      #dropdown {
+        cursor:pointer;
+        width:100%;
+        border:none;
+        background:#0CF;
+        color:#FFF;
+        margin:0 0 5px;
+        padding:10px;
+        font-size:15px;
+        border-radius:10px;
+      }
+
+      #dropdown:hover {
+        background:#09C;
+        -webkit-transition:background 0.3s ease-in-out;
+        -moz-transition:background 0.3s ease-in-out;
+        transition:background-color 0.3s ease-in-out;
+      }
+
+      #dropdown:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
     </style>
 
     <!--
@@ -34,10 +58,9 @@
   </head>
 
   <body>
-    <h1><span id="left-water">9</span> cup of water left</h1>
+    <h1>还剩 <span id="left-water">8</span> 杯水</h1>
     <div id="container">
-      <span>water</span>
-      <button id="dropdown">click me</button>
+      <button id="dropdown">点我喝水</button>
     </div>
   </body>
 </html>

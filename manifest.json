@@ -2,11 +2,11 @@
   "manifest_version": 2,
 
   "name": "8water",
-  "description": "8 cups of water",
-  "version": "1.0",
+  "description": "每天喝8杯水",
+  "version": "1.1",
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "water.png",
     "default_popup": "popup.html",
     "default_title": "点击这里"
   },
